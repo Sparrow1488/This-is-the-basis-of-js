@@ -37,6 +37,7 @@ for (let car of cars) {
 //11 ОБЪЕКТЫ
 
 const person = {
+    //ключ: значение
     firstName: 'Valentin',
     lastName: 'Sparrow',
     birthYear: 2003,
@@ -53,7 +54,25 @@ const person = {
 }
 console.log('Имя человека: ' + person.firstName)
 person.greet()
-//мдээ, такая вот шиза
+//это одно и тоже (только в нижнем можно обратиться к конкретному эллементу (тк массив))
 console.log(person['hobby'])
 console.log(person.hobby[1])
 
+//создаю переменную с названием строк в объекте и вызываю его как 
+let key = 'hobby'
+console.log(person[key])
+
+//можно также поменять значение у ключа на любое другое
+person.haveSex = !person.haveSex
+console.log(person.haveSex)
+
+//тут я получается добавил новый ключ в объект person
+person.have18Years = function haveEighting(){
+    if (this.agePerson >= 18) {
+        console.log(this.firstName + ' совершеннолетний')
+    } else {
+        console.log(this.firstName + ' несовершеннолетний')
+    }
+}
+//вызвал недавно созданный ключ из объекта
+person.have18Years()
