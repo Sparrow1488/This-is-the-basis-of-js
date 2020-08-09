@@ -4,6 +4,7 @@ const prog = true
 const name = 'Name'
 const age = 27
 let x
+console.log('kjkjkj')
 
 // 5 примитивных типов данных
 console.log(typeof prog)
