@@ -11,3 +11,4 @@ function countStart(){
 console.log('я хочу пиццу')
 const click = countStart()
 document.onclick = click
+console.log('kjkjkj')
