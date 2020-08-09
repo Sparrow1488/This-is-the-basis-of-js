@@ -14,3 +14,5 @@ console.log(Number.NaN) // Not a Number
 console.log(typeof NaN)
 const nanTest = 2 / undefined
 console.log(isNaN(nanTest)) //true
+
+console.log(Number.NEGATIVE_INFINITY)
