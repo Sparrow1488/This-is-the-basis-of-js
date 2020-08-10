@@ -67,3 +67,4 @@ function getRandomInt(min, max) {
 }
 
 console.log(getRandomInt(10, 55))
+//-----------------------------------
