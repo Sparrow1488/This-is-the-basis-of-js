@@ -41,8 +41,20 @@ if (textA.length < 13) {
 }
 //-----------------------
 
-const password = '          pa ss word '
+const password = '          password '
 console.log(password) 
 console.log(password.trim()) //убирает ВСЕ пробелы
 console.log(password.trimLeft()) //убирает ВСЕ слева
 console.log(password.trimRight()) //убирает ВСЕ справа
+
+function logPerson (s, name, age) {
+    //это типо массив
+    console.log(s, name, age)
+    return `${s[0]}${name}${s[1]}${age}${s[2]}`
+}
+
+const personName = 'Валентин'
+const personAge = 19
+
+const output = logPerson`Имя: ${personName}, Возраст ${personAge}`
+console.log(output)
