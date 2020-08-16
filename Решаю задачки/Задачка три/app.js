@@ -10,15 +10,6 @@ const people = [
     {name: 'Вика', money: 2000, male: 'girl'}
 ]
 
-function findIndexArr(){
-    if (index === -1){
-        people.push({name: namePeople, money: moneyPeople, male: malePeople})
-        index = people.findIndex(function(people){
-            return people.name == namePeople
-    }) 
-    } 
-}
-
 let namePeople = 'Юра2'
 let moneyPeople = 30000
 let malePeople = 'man'
@@ -26,6 +17,12 @@ let index = people.findIndex(function(people){
         return people.name == namePeople
 })
 
-findIndexArr()
+if (index === -1){
+    people.push({name: namePeople, money: moneyPeople, male: malePeople})
+    index = people.findIndex(function(people){
+        return people.name == namePeople
+}) 
+} 
+
 console.log(index)
 console.log(people)
