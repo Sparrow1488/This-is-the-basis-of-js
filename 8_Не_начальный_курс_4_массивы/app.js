@@ -1,4 +1,5 @@
 const cars = ['Мазда', 'BMW']
+const nums = [1, 1, 2, 3, 5, 8, 13]
 
 cars.push('Волга')
 cars.unshift('Лада')
@@ -24,4 +25,23 @@ const index = cars.indexOf('Мазда') //узнаем есть ли такой
 cars[index] = 'Шевралю' //заменяем полученный выше индекс на новый
 console.log(index)
 console.log(cars)
+
+console.log(cars.includes('Шевралю')) //ищет в массиве эллемент; возвращает boolean
+console.log('===================')
+
+const upperCaseCars = cars.map(car => { //map принимает в себя функцию и ВОЗВРАЩАЕТ ПРЕЖНИЙ МАССИВ
+    return car.toUpperCase()
+})
+console.log(upperCaseCars)
+
+const pow2Fun = num => num ** 2
+const pow2Nums = nums.map(pow2Fun).map(Math.sqrt)
+console.log(pow2Nums)
+console.log(nums)
+
+const filterNums = nums.filter(num => num < 10)  //filter принимает в себя функцию и ВОЗВРАЩАЕТ НОВЫЙ МАССИВ (поэтому объявляем его const/let)
+console.log('Массив filterNums:')
+console.log(filterNums)
+console.log('Массив nums:')
+console.log(nums)
 

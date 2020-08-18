@@ -10,8 +10,8 @@ const people = [
     {name: 'Вика', money: 2000, male: 'girl'}
 ]
 
-let namePeople = 'Юра2'
-let moneyPeople = 30000
+let namePeople = 'Владелен'
+let moneyPeople = 50000
 let malePeople = 'man'
 let index = people.findIndex(function(people){
         return people.name == namePeople
