@@ -1,3 +1,5 @@
+// ТИПО БАЗА ДАННЫХ
+
 const arrMembers = ['Admin1']
 
 function addMember(name = '') {

@@ -14,3 +14,10 @@
 
 // pushFun('Хуеплет')
 // bazaMembersVip()
+
+function calculate(){
+    let cal = 0
+    return function(){
+        
+    }
+}
