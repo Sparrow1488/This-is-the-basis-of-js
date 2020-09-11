@@ -1,6 +1,8 @@
 body {
     width: 1200px;
     margin: auto;
+    background-color: #F7F0EB;
+    font-size: 20px;
 }
 
 .autorization {
@@ -21,10 +23,10 @@ header {
     height: 220px;
 }
 
-.header-pic {
+.header-pic img {
+    height: auto;
     width: 100%;
-    height: 100%;
-    background-color: green;
+    background-color: #E8E8E8;
 }
 
 .navigation-div{
@@ -33,8 +35,8 @@ header {
     align-items: center;
     flex-wrap: wrap;
     display: grid;
-    grid-template-columns: 20% 20% 20%;
-    background-color: #FEE3E3;
+    grid-template-columns: 20% 20% 20% 20%;
+    background-color: #BABABA;
 }   
 
 .navigation-div button {
@@ -47,7 +49,7 @@ main {
     width: 100%;
     /* background-color: #FCAAAA; */
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 70% 30%;
     margin: 0 auto;
 }
 
@@ -58,10 +60,10 @@ main {
 }
 
 .right-menu {
-    display: flex;
-    justify-content: right;
+    /* display: flex;
+    justify-content: right; */
     height: 100%;
-    background-color: green;
+    background-color: #E8E8E8;
 }
 
 .card {
@@ -93,4 +95,37 @@ main {
 .card-img img {
     height: auto;
     width: 500px;
+}
+
+
+/*---ПРАВОЕ МЕНЮ---*/
+
+
+.sort-tab {
+    border-top: 2px solid blue;
+    /* text-align: center; */
+    height: auto;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.sort-tab ul span {
+    cursor: pointer;
+}
+
+.small-card {
+    width: 95%;
+    height: auto;
+    /* background-color: #fff; */
+    border-top: 2px solid blue;
+    margin: 0 auto;
+    margin-top: 20px;
+    /* padding: 5px 5px 10px 5px; */
+    font-size: 20px;
+}
+
+.small-card button {
+    cursor: pointer;
 }
