@@ -1,4 +1,8 @@
-console.log(1 + 1)
-console.log(1 + 1)
-234234
-2342342
+const btn = document.querySelector('#btn1');
+const inp = document.querySelector('#enter');
+
+btn.addEventListener('click', (e) => {
+    e.preventDefault()
+    let textInp = inp.value;
+    console.log(textInp)
+})
