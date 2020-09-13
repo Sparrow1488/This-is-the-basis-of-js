@@ -3,6 +3,7 @@ body {
     margin: auto;
     background-color: #F7F0EB;
     font-size: 20px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
 }
 
 .autorization {
@@ -113,6 +114,9 @@ main {
 
 .sort-tab ul span {
     cursor: pointer;
+}
+.sort-tab ul span:hover {
+    font-style: oblique;
 }
 
 .small-card {

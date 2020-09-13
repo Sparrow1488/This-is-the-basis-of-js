@@ -1,8 +1,7 @@
-const btn = document.querySelector('#btn1');
-const inp = document.querySelector('#enter');
+const newURL = 'https://jsonplaceholder.typicode.com/users'
 
-btn.addEventListener('click', (e) => {
-    e.preventDefault()
-    let textInp = inp.value;
-    console.log(textInp)
-})
+const xhr = new XMLHttpRequest()
+
+xhr.open('GET', newURL)
+
+xhr.send()
